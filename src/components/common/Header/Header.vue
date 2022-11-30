@@ -6,7 +6,7 @@ import {
   TrophyIcon,
   UserIcon,
 } from "@heroicons/vue/24/outline";
-import { IconButton, ToolTip } from "../../ui";
+import { IconButton, SearchBar, ToolTip } from "../../ui";
 import IconBadge from "../../ui/IconBadge/IconBadge.vue";
 
 const clicked = () => {
@@ -15,15 +15,23 @@ const clicked = () => {
 </script>
 
 <template>
-  <header class="flex items-center justify-between h-12 px-2">
+  <header
+    class="flex items-center justify-between fixed top-0 left-0 h-12 w-full px-2 shadow-md"
+  >
     <div class="flex items-center space-x-4">
       <img src="" alt="LOGO" />
       <nav class="flex items-center space-x-4">
-        <ToolTip :text="$t('header.browse')">
+        <ToolTip :text="$t('header.browse')" class="md:hidden">
           <IconButton @action="clicked"
             ><Square2StackIcon class="icon" />
           </IconButton>
         </ToolTip>
+
+        <router-link
+          class="font-semibold transition-color duration-100 hover:text-dark-purple hidden md:block"
+          to="/browse"
+          >{{ $t("header.browse") }}</router-link
+        >
 
         <ToolTip :text="$t('header.more')">
           <IconButton @action="clicked"
@@ -33,8 +41,10 @@ const clicked = () => {
       </nav>
     </div>
 
+    <SearchBar class="hidden md:flex" />
+
     <div class="flex items-center space-x-4">
-      <ToolTip :text="$t('header.search')">
+      <ToolTip class="md:hidden" :text="$t('header.search')">
         <IconButton @action="clicked"
           ><MagnifyingGlassIcon class="icon" />
         </IconButton>
@@ -60,7 +70,7 @@ const clicked = () => {
         {{ $t("header.signUp") }}
       </button>
 
-      <ToolTip :text="$t('profile')">
+      <ToolTip :text="$t('header.profile')">
         <IconButton @action="clicked"><UserIcon class="icon" /> </IconButton>
       </ToolTip>
     </div>

@@ -8,6 +8,7 @@ const en = {
     logIn: "Log In",
     signUp: "Sign Up",
     profile: "Profile",
+    searchPlaceholder: "Search",
   },
 };
 
