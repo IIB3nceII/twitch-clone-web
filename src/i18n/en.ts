@@ -10,6 +10,9 @@ const en = {
     profile: "Profile",
     searchPlaceholder: "Search",
   },
+  sidebar: {
+    title: "Recommended Channels",
+  },
 };
 
 export default en;

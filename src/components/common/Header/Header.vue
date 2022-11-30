@@ -16,7 +16,7 @@ const clicked = () => {
 
 <template>
   <header
-    class="flex items-center justify-between fixed top-0 left-0 h-12 w-full px-2 shadow-md"
+    class="flex items-center justify-between fixed top-0 left-0 h-12 w-full px-2 bg-white shadow-md z-50"
   >
     <div class="flex items-center space-x-4">
       <img src="" alt="LOGO" />

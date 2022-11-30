@@ -4,6 +4,8 @@ import { MainLayout } from "../layouts";
 
 <template>
   <MainLayout>
-    <h1 class="text-4xl text-primary bg-dark-purple">{{ $t("home") }}</h1>
+    <h1 class="text-4xl text-primary bg-dark-purple w-full">
+      {{ $t("home") }}
+    </h1>
   </MainLayout>
 </template>

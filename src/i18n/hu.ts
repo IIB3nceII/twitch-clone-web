@@ -10,6 +10,9 @@ const hu = {
     profile: "Profile",
     searchPlaceholder: "Search",
   },
+  sidebar: {
+    title: "Recommended Channels",
+  },
 };
 
 export default hu;
