@@ -5,9 +5,24 @@
 :root {
   --base-bg: #f7f7f8;
   --base-bg-2: #efeff1;
+  --content-bg: #1f2024;
   --btn-primary: #f2f2f2;
   --dark-purple: #9147ff;
   --dark-red: #e91916;
 
+  --hover-primary: #ebebeb;
+
   --primary: #0e0e0f;
+}
+
+@layer base {
+  * {
+    @apply text-primary dark:text-white;
+  }
+}
+
+@layer components {
+  .icon {
+    @apply h-6;
+  }
 }

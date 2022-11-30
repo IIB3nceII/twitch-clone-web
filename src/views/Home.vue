@@ -1,5 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { Header } from "../components/common/";
+</script>
 
 <template>
-  <div><h1 class="text-4xl text-primary bg-dark-purple">Home</h1></div>
+  <Header />
+  <h1 class="text-4xl text-primary bg-dark-purple">{{ $t("home") }}</h1>
 </template>
