@@ -14,7 +14,7 @@ const showToolTip = ref<boolean>(false);
     <p
       :class="`${
         showToolTip ? 'block' : 'hidden'
-      } absolute -ml-2 p-1 whitespace-nowrap text-xs text-white font-semibold bg-content-bg rounded-md`"
+      } absolute -ml-2 p-1 whitespace-nowrap text-xs text-white font-semibold bg-content-bg rounded`"
     >
       {{ text }}
     </p>
